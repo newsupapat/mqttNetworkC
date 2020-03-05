@@ -1,0 +1,17 @@
+{
+  "name": "Broker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "http": "^0.0.0",
+    "json-socket": "^0.3.0",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "uuidv4": "^6.0.2",
+    "ws": "^7.2.1"
+  },
+  "scripts": {
+    "start": "nodemon Clean.js --debug"
+  }
+}
