@@ -11,11 +11,14 @@ let topicList = {};
 let Mqttlist = {};
 
 const MAX_TIME_SEND = 3;
+
 server.listen(port, () => {
   //   console.log('port 1883 (MQTT) listening');
   console.log(`${new Date()}: 🚀 🍺 Server has been started on ${port}`);
   if (debug) console.log('Debug mode on');
 });
+
+
 server.on('connection', function(socket) {
   const socketId = uuid();
   if (debug) {
@@ -31,7 +34,6 @@ server.on('connection', function(socket) {
       console.error('decode', error.message);
       socket.destroy();
     }
-    // socket.sendEndMessage({ result: result });
   });
   socket.on('end', () => {
     // if (debug) console.log('end');

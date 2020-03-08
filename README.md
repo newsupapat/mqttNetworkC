@@ -10,28 +10,29 @@ Use yarn to install essential dependencies  [yarn](https://www.google.com/url?sa
 cd Broker && yarn 
 ```
 
-## Usage For Debug mode (Broker)
+## Stating as Debug mode (Broker)
 
 ```node
 yarn run dev
 ```
-## Usage (Broker)
+## Initialization (Broker)
 
 ```node
 node Clean.js
 ```
-## Usage (Publisher)
+## Command for publisher to send the message
 
 ```node
 node index.js localhost {topic} {Message}
 ```
-## Usage (Subscriber) For Sub Interesting Topic
+## Command for subscriber to subscribe the interest topic
 
 ```node
 node index.js localhost {topic} 
 ```
+## After publisher sent the message, if subscribers are on that topic, they will receive them.
 
-## Contributing
+## Contributed by
 Pasinee	
 Supawan	
 Sornsiri	
